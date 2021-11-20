@@ -72,10 +72,6 @@ if page=="Panic Prediction":
     x9 = form.selectbox('Leukocytosis',["YES","NO"],key=1)
     form.text(" \n")
 
-
-    x10 = form.selectbox('Nutritional status(NRS-2002 Score)',list(d['nutrition']),key=1)
-    form.text(" \n")
-
     x11 = form.selectbox('Prior Abdominal Surgery',["YES","NO"],key=1)
     form.text(" \n")
 
@@ -114,7 +110,6 @@ if page=="Panic Prediction":
         x7 = float(x7) / 5.0
         x8 = float(f[x8])
         x9 = float(l[x9])
-        x10 = float(n[x10]) / 9.0
         x11 = float(l[x11])
         x12 = float(r[x12]) / 5.0
         x13 = float(l[x13])
@@ -122,7 +117,7 @@ if page=="Panic Prediction":
         x14 = float(l[x14])
 
         
-        c1 = rfc.predict_proba(np.array([x2,x8,x4,x13,x6,x10,x11,x9,x14,x1,x7,x12,x3,x5]).reshape(1, -1))[:, 1]
+        c1 = rfc.predict_proba(np.array([x2,x8,x4,x13,x6,x11,x9,x14,x1,x7,x12,x3,x5]).reshape(1, -1))[:, 1]
 
         c2 = c1 > 0.10571997452882279
 
