@@ -90,7 +90,7 @@ if page=="Panic Prediction":
     form.text(" \n")
 
 
-    submit_button = form.form_submit_button(label='Predict Panic')
+    submit_button = form.form_submit_button(label='Predict')
 
 
 
