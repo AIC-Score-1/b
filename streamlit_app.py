@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 
-page = st.sidebar.selectbox("Select Activity", ["Panic Prediction",])
+page = st.sidebar.selectbox("Select Activity", ["Prediction",])
 st.sidebar.text(" \n")
 
 pkl_file2 = open('rfc.pkl', 'rb')
@@ -32,9 +32,9 @@ d = {'female': {0.0, 1.0},
  'ai': {0.0, 1.0}}
 
 
-if page=="Panic Prediction":
+if page=="Prediction":
 
-    st.header("Panic Prediction")
+    st.header("Prediction")
     st.text(" \n")
 
     form = st.form(key='my_form2')
