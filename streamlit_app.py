@@ -116,7 +116,7 @@ if page=="Panic Prediction":
 
         x14 = float(l[x14])
 
-        
+        print(rfc.n_features_in_)
         c1 = rfc.predict_proba(np.array([x2,x8,x4,x13,x6,x11,x9,x14,x1,x7,x12,x3,x5]).reshape(1, -1))[:, 1]
 
         c2 = c1 > 0.10571997452882279
