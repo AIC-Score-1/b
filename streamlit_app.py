@@ -34,7 +34,7 @@ d = {'female': {0.0, 1.0},
 
 if page=="Prediction":
 
-    st.header("Prediction")
+    st.header("Prediction. Not to be currently used for clincal purposes")
     st.text(" \n")
 
     form = st.form(key='my_form2')
