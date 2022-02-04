@@ -34,7 +34,7 @@ d = {'female': {0.0, 1.0},
 
 if page=="Prediction":
 
-    st.header("Prediction. Not to be currently used for clincal purposes")
+    st.header("Prediction. Not to be currently used for clinical purposes")
     st.text(" \n")
 
     form = st.form(key='my_form2')
@@ -42,7 +42,7 @@ if page=="Prediction":
     x1 = form.slider(label='Charlson Comorbidity Index (CCI)', min_value = 0, max_value = 20, step = 1, value = 4)
     form.text(" \n")
 
-    x2 = form.slider(label='Age', min_value = 18, max_value = 105, step = 1, value = 65)
+    x2 = form.slider(label='Age (years)', min_value = 18, max_value = 105, step = 1, value = 65)
     form.text(" \n")
 
 
