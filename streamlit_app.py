@@ -1,8 +1,9 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
 import pickle
 import sklearn
+import pkg_resources
+pkg_resources.require("numpy==`1.19.5")
 
 
 page = st.sidebar.selectbox("Select Activity", ["Prediction",])
